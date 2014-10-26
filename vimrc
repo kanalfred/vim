@@ -249,6 +249,9 @@ nmap <C-h> <C-w><C-]><C-w>T
 noremap <C-t> :tabnew<CR>
 "noremap <C-l> :tablast<CR>
 
+" avoid Ex mode
+nnoremap Q <nop>
+
 " Ctrl+l Last active Tab
 let g:lasttab = 1
 nmap <C-l> :exe "tabn ".g:lasttab<CR>

@@ -45,6 +45,9 @@ set noswapfile
 " Display number line
 set number
 
+" Highlight current line 
+set cursorline
+
 "Auto-completion menu
 set wildmenu
 
@@ -152,7 +155,7 @@ let Tlist_Use_Right_Window = 1    " Show Tlist pane on the right instead of defa
 " phpAutoComplete
 " https://github.com/shawncplus/phpcomplete.vim
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:phpcomplete_relax_static_constraint = 1
+"let g:phpcomplete_relax_static_constraint = 1
 "let g:phpcomplete_parse_docblock_comments = 1
 "let g:phpcomplete_enhance_jump_to_definition = 0 
 " Remove preview window  made, these lines close it on movement in insert mode or when leaving

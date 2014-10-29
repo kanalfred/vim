@@ -35,7 +35,7 @@ set expandtab
 
 " Performance 
 set nocursorcolumn
-set nocursorline
+"set nocursorline
 syntax sync minlines=256
 
 " No backup files

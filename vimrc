@@ -192,7 +192,7 @@ set tags=tags;/
 
 " Ack
 noremap <Leader>a :Ack <cword><cr>
-"noremap <Leader>a :Ack <cword>
+"noremap <Leader>a :r! grep -Rn <cword> ./ <cr>
 
 "ctrlp-funky
 let g:ctrlp_extensions = ['funky'] 

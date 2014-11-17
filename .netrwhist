@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/alfred/.vim'
 let g:netrw_dirhist_2='/var/www/vhosts/dev/listingsadmin/httpdocs'
+let g:netrw_dirhist_3='/home/alfred/.composer'
+let g:netrw_dirhist_4='/tmp/alfred/IDXAgent/class'

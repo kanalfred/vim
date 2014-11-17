@@ -69,7 +69,8 @@ set history=1000
 
 " Ctag Config
 " http://rc3.org/2013/01/05/vim-and-ctags/
-set tags=./tags,tags;
+"set tags=./tags,tags;
+set tags=./tags;/
 
 " Leader Key
 let mapleader = ","
@@ -248,9 +249,22 @@ vnoremap > >gv
 "nmap <F12> <C-w><C-]><C-w>T 
 nmap <C-h> <C-w><C-]><C-w>T 
 
+" Open current split in new tab
+nmap <S-t> <C-w>T
+
+" Open Ctag in split by press F12
+"nmap <F12> <C-w><C-]> 
+nmap <F12> <C-w>g<C-]> 
+"nmap <F12> :vsp <CR>:exec("tag ".expand("<cword>"))<CR> 
+
+" Map the default Ctrl ] to show tag matches list
+nmap <Leader>s :vsp <CR>:exec("tjump ".expand("<cword>"))<CR>
+nmap <C-]> :exec("tjump ".expand("<cword>"))<CR>
+
 " Ctrl+t open new tab
 noremap <C-t> :tabnew<CR>
 "noremap <C-l> :tablast<CR>
+"nmap <C-]> :tag <cword>
 
 " avoid Ex mode
 nnoremap Q <nop>
@@ -281,8 +295,13 @@ noremap <Leader>9 9gt
 set autochdir
 
 "Ctrl+s split window
-noremap <C-s> <C-w>v<CR>
+"noremap <C-s> <C-w>v<CR>
+noremap <S-s> <C-w>v<CR>
 "map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
+
+" Ctrl s to save
+nmap <c-s> :w<CR>
+imap <c-s> <Esc><c-s>
 
 " Function number keys
 " --------------------------------

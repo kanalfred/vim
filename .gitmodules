@@ -4,3 +4,36 @@
 [submodule "bundle/ctrlp-funky"]
 	path = bundle/ctrlp-funky
 	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/ctrlp-smarttabs"]
+	path = bundle/ctrlp-smarttabs
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/phpcomplete.vim"]
+	path = bundle/phpcomplete.vim
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/tabline.vim"]
+	path = bundle/tabline.vim
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/kanalfred/vim.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/kanalfred/vim.git

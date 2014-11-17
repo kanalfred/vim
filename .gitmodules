@@ -1,6 +1,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/kanalfred/vim.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/ctrlp-funky"]
 	path = bundle/ctrlp-funky
 	url = https://github.com/kanalfred/vim.git

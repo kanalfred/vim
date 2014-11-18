@@ -24,7 +24,7 @@
 	url = https://github.com/kanalfred/vim.git
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
-	url = https://github.com/kanalfred/vim.git
+	url = https://github.com/joonty/vdebug.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git

@@ -35,8 +35,11 @@ set expandtab
 
 " Performance 
 set nocursorcolumn
-"set nocursorline
+set nocursorline
 syntax sync minlines=256
+set ttyfast
+set lazyredraw
+
 
 " No backup files
 set nobackup

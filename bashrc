@@ -23,9 +23,7 @@ alias jq03='ssh akan@devjq03'
 alias watch='watch '
 
 # db
-alias db='mysql -uadmin -p25538270 -h'
-alias wdb='mysql -uadmin -plandmark5! -h'
-alias db_getonadmin='mysql -ulistingsadm -pqEiKgZrt -hcpanel.getonadmin.net'
+alias db='mysql -uuser -ppassword -h'
 
 #db query
 alias db_radius_acct='wdb radius.watervpn.com -e "select radacctid, username, groupname, nasipaddress, acctstarttime, acctstoptime, calledstationid, callingstationid, framedprotocol, framedipaddress  from radius.radacct order by radacctid desc"'

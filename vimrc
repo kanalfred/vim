@@ -92,6 +92,7 @@ set mousemodel=extend
 "colorscheme peacock
 
 colorscheme jellybeans
+"colorscheme candystripe
 
 "let g:jellybeans_use_lowcolor_black = 0
 "colorscheme candystripe
@@ -175,6 +176,7 @@ set completeopt-=preview
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_at_startup = 0
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
@@ -313,6 +315,8 @@ imap <c-s> <Esc><c-s>
 nmap <F2> :NERDTreeToggle<CR>
 nmap <F3> :TlistToggle<CR>
 nmap <F4> :set nonumber!<CR>
+set pastetoggle=<F6>
+map <F9> :set nowrap! <CR>
 
 " Search function ta
 "noremap <Leader>g :ta 

@@ -40,6 +40,8 @@ syntax sync minlines=256
 set ttyfast
 set lazyredraw
 
+" Visual paste delete without save to register
+vmap p "_dP
 
 " No backup files
 set nobackup

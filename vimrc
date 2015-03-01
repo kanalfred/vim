@@ -119,7 +119,8 @@ colorscheme jellybeans
 " http://kien.github.io/ctrlp.vim/#installation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " https://github.com/kien/ctrlp.vim/issues/181
-let g:ctrlp_root_markers = ['.project_root', '.git']
+"let g:ctrlp_root_markers = ['.project_root', '.git']
+let g:ctrlp_root_markers = ['.project_root']
 let g:ctrlp_use_caching = 1
 "let g:ctrlp_working_path_mode = ""
 let g:ctrlp_working_path_mode = 2

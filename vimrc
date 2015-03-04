@@ -132,7 +132,8 @@ let g:ctrlp_max_depth=50
 let g:ctrlp_clear_cache_on_exit = 0
 "let g:ctrlp_cmd = 'CtrlPMRU'
 
-noremap <C-x> :CtrlP ~/www<CR>
+"noremap <C-x> :CtrlP ~/www<CR>
+noremap <C-x> :CtrlPBuffer<CR>
 
 " Airline
 " https://github.com/bling/vim-airline/blob/master/README.md
@@ -150,7 +151,7 @@ let g:airline_section_c = '%F'
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 "" Just show the filename (no path) in the tab
-"let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Change TagList display
 " http://rustyrazorblade.com/2010/10/customize-taglist-plugin-display/
@@ -241,6 +242,9 @@ map <S-k> <C-u>
 
 " Select entire funciton block Shfit+f
 map <S-f> vaBV
+
+" Reveal file on NerdTree
+noremap <C-S-r> :NERDTreeFind<CR>
 
 " Tag List Shotcut
 "noremap <A-t> :Tlist<CR>

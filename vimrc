@@ -15,6 +15,9 @@ set wrap
 set tabstop=4
 "set linebreak
 
+"Buffer
+set hidden
+
 " Easy Paste
 "set paste
 set clipboard=unnamed
@@ -219,8 +222,11 @@ map <F8> gt
 map <F7> gT
 
 " Tab navigation Ctrl+j & Ctrl+k
-noremap <C-j> :tabp<CR>
-noremap <C-k> :tabn<CR>
+"noremap <C-j> :tabp<CR>
+"noremap <C-k> :tabn<CR>
+" Buffer navigation Ctrl+j & Ctrl+k
+noremap <C-j> :bp<CR>
+noremap <C-k> :bn<CR>
 
 " Tab Firefox like tab navigation Ctrl+j & Ctrl+k
 noremap <C-right> :tabn<CR>
@@ -244,7 +250,7 @@ map <S-k> <C-u>
 map <S-f> vaBV
 
 " Reveal file on NerdTree
-noremap <C-S-r> :NERDTreeFind<CR>
+noremap <Leader>r :NERDTreeFind<CR>
 
 " Tag List Shotcut
 "noremap <A-t> :Tlist<CR>
@@ -282,9 +288,12 @@ noremap <C-t> :tabnew<CR>
 nnoremap Q <nop>
 
 " Ctrl+l Last active Tab
-let g:lasttab = 1
-nmap <C-l> :exe "tabn ".g:lasttab<CR>
-au TabLeave * let g:lasttab = tabpagenr()
+"let g:lasttab = 1
+"nmap <C-l> :exe "tabn ".g:lasttab<CR>
+"au TabLeave * let g:lasttab = tabpagenr()
+
+" Ctrl+l Last buffer
+nmap <C-l> :b#<CR>
 
 " Windwos Navigation
 nmap <silent> <A-Up> :wincmd k<CR>

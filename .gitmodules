@@ -40,3 +40,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-bufsurf"]
+	path = bundle/vim-bufsurf
+	url = https://github.com/ton/vim-bufsurf.git

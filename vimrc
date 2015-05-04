@@ -225,8 +225,11 @@ map <F7> gT
 "noremap <C-j> :tabp<CR>
 "noremap <C-k> :tabn<CR>
 " Buffer navigation Ctrl+j & Ctrl+k
-noremap <C-j> :bp<CR>
-noremap <C-k> :bn<CR>
+"noremap <C-j> :bp<CR>
+"noremap <C-k> :bn<CR>
+" Buf Surf navigation
+noremap <C-j> :BufSurfBack<CR>
+noremap <C-k> :BufSurfForward<CR>
 
 " Tab Firefox like tab navigation Ctrl+j & Ctrl+k
 noremap <C-right> :tabn<CR>

@@ -4,12 +4,12 @@ execute pathogen#infect()
 " Vim php plugin
 " http://joncairns.com/2012/05/using-vim-as-a-php-ide/
 
-
 " Vim Config
 " -------------------------
 filetype indent on
 syntax on
 filetype on
+filetype plugin on
 "set nowrap
 set wrap
 set tabstop=4
@@ -20,7 +20,10 @@ set hidden
 
 " Easy Paste
 "set paste
-set clipboard=unnamed
+"set clipboard=unnamed
+"set clipboard=unnamedplus
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
 
 " Color
 set t_Co=256
@@ -87,6 +90,11 @@ let mapleader = ","
 set mousemodel=extend
 " set mouse=a
 
+" highlight all occurrences on double clicking
+" http://stackoverflow.com/questions/6876850/how-to-highlight-all-occurrences-of-a-word-in-vim-on-double-clicking
+"noremap <2-LeftMouse> <c-o>*
+nnoremap <silent> <2-LeftMouse> :let @/='\V\<'.escape(expand('<cword>'), '\').'\>'<cr>:set hls<cr>
+
 " Color Theme
 " https://github.com/zeis/vim-kolor - downland theme
 "colorscheme kolor
@@ -97,6 +105,7 @@ set mousemodel=extend
 "colorscheme peacock
 
 colorscheme jellybeans
+
 "colorscheme candystripe
 
 "let g:jellybeans_use_lowcolor_black = 0
@@ -106,7 +115,6 @@ colorscheme jellybeans
 " Molokai Theme setting
 "colorscheme molokai
 "colorscheme monokai
-
 "colorscheme kolor
 
 "let g:molokai_original = 0
@@ -155,6 +163,8 @@ let g:airline_section_c = '%F'
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 "" Just show the filename (no path) in the tab
 let g:airline#extensions#tabline#fnamemod = ':t'
+" Airline show buffers
+"let g:airline#extensions#tabline#enabled = 1
 
 " Change TagList display
 " http://rustyrazorblade.com/2010/10/customize-taglist-plugin-display/
@@ -214,6 +224,7 @@ noremap <C-m> :CtrlPFunky<CR>
 
 "ctrlp-smarttabs
 nmap <C-n> :CtrlPSmartTabs<CR>
+
 
 " Custom Key Map
 " --------------------------

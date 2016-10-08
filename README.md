@@ -38,12 +38,12 @@ ln -s ~/.vim/update-better-ctags.sh ~/update-better-ctags.sh <br/>
 
 mycli - mysql client autocomplete
 -------------
-url: https://github.com/dbcli/mycli
+url: https://github.com/dbcli/mycli <br/> 
 
-Ubuntu
-sudo apt-get install mycli
+Ubuntu <br/> 
+sudo apt-get install mycli <br/> 
 
-Centos 6
-sudo yum install python-pip
-easy_install mycli
+Centos 6 <br/> 
+sudo yum install python-pip <br/> 
+easy_install mycli <br/> 
 

@@ -35,3 +35,15 @@ Better Ctags
 
 ln -s ~/.vim/ctags-better ~/ctags-better <br/>
 ln -s ~/.vim/update-better-ctags.sh ~/update-better-ctags.sh <br/>
+
+mycli - mysql client autocomplete
+-------------
+url: https://github.com/dbcli/mycli
+
+Ubuntu
+sudo apt-get install mycli
+
+Centos 6
+sudo yum install python-pip
+easy_install mycli
+

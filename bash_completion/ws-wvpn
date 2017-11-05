@@ -1,0 +1,45 @@
+_ws-wvpn() 
+{
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    pprev="${COMP_WORDS[COMP_CWORD-2]}"
+
+    services="radius openvpn"
+    actions="post get put delete"
+    radiusopts="account radius"
+    openvpnopts="account openvpn"
+    filelist=`ls`
+
+    # service
+    if [ $COMP_CWORD -eq 1 ] ; then
+    #if [[ ${cur} == * ]] ; then
+        COMPREPLY=( $(compgen -W "${services}" -- ${cur}) )
+        return 0
+    fi
+
+    # action
+    if [ $COMP_CWORD -eq 2 ] ; then
+        COMPREPLY=( $(compgen -W "${actions}" -- ${cur}) )
+        return 0
+    fi
+
+    # method
+    if [ $COMP_CWORD -eq 3 ] ; then
+        if [[ ${pprev} == 'radius' ]] ; then
+	    opts=$radiusopts
+        elif [[ ${pprev} == 'openvpn' ]] ; then
+	    opts=$openvpnopts
+	fi
+        COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+        return 0
+    fi
+
+    # list current dir file
+    if [ $COMP_CWORD -eq 4 ] ; then
+        COMPREPLY=( $(compgen -W "${filelist}" -- ${cur}) )
+        return 0
+    fi
+}
+complete -F _ws-wvpn ws-wvpn

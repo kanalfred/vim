@@ -9,12 +9,13 @@ Install
 1) git Clone <br/>
 git clone https://github.com/kanalfred/vim.git
 
-2) mv vim .vim
+2) mv .vim vim.bak
+3) mv vim .vim
 
-3) Create symbolic links so that ~/.vimrc points to the ~/.vim/vimrc file: <br/>  
+4) Create symbolic links so that ~/.vimrc points to the ~/.vim/vimrc file: <br/>  
 ln -s ~/.vim/vimrc ~/.vimrc
 
-4) Init Submodule <br/>
+5) Init Submodule <br/>
 cd ~/.vim <br/>
 git submodule init <br/>
 git submodule update <br/>

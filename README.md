@@ -48,3 +48,7 @@ Centos 6 <br/>
 sudo yum install python-pip <br/> 
 easy_install mycli <br/> 
 
+Tmux Plugin
+-------------
+tmux-resurrect
+https://github.com/tmux-plugins/tmux-resurrect

@@ -367,6 +367,10 @@ if has("autocmd")
   augroup END
 endif
 
+" Python 3 support
+" https://github.com/vim-syntastic/syntastic/issues/2242
+let g:syntastic_python_checkers = ['python']
+let g:syntastic_python_python_exec = 'python3'
 
 " Custom Key Map
 " --------------------------

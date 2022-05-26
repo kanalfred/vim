@@ -338,6 +338,9 @@ noremap <S-s> <C-w>v<CR>
 nmap <c-s> :w<CR>
 imap <c-s> <Esc><c-s>
 
+" formatJson
+com! FormatJSON %!python -m json.tool
+
 " Function number keys
 " --------------------------------
 " Toggle Number
